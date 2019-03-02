@@ -7,6 +7,12 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AeroORMFramework">
+      <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\AeroORMFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="GoodyDataLib">
+      <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\GoodyDataLib\GoodyDataLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
