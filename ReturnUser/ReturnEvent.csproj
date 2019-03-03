@@ -7,7 +7,6 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ParseHTTPLibrary\ParseHTTPLibrary.csproj" />
     <ProjectReference Include="..\TransformLibrary\TransformLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
