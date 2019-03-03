@@ -11,9 +11,6 @@
     <ProjectReference Include="..\TransformLibrary\TransformLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="GoodyDataLib">
-      <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\Debug\GoodyDataLib.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>

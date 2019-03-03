@@ -7,9 +7,6 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.25" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="GoodyDataLib">
-      <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\GoodyDataLib\GoodyDataLib.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>

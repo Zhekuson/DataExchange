@@ -20,10 +20,11 @@ namespace ReturnUser
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public DateTime EventDate { get; set; }
+        public DateTime? EventDate { get; set; }
 
         public string Adress { get; set; }
 
+        public string District { get; set; }
         public string Description { get; set; }
         public string State { get; set; }
     }

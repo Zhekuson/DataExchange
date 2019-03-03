@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ReturnUser
 {
-    public class JSONEventParser
+    class JsonDistrictParser
     {
         public int id;
         public int ID;
@@ -26,11 +26,13 @@ namespace ReturnUser
         public DateTime? date;//EvantDate 
 
         public DateTime? EventDate;
-       
+
         public string address;
         public string aasm_state;//state 
         public string resources;
         public string description;
+
+        public List<JSONEventParser> all;
 
         public string name;
         public string district;
