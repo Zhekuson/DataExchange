@@ -11,9 +11,6 @@
     <ProjectReference Include="..\TransformLibrary\TransformLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AeroORMFramework">
-      <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\AeroORMFramework.dll</HintPath>
-    </Reference>
     <Reference Include="GoodyDataLib">
       <HintPath>..\..\..\..\..\Users\Zhekuson\Downloads\Debug\GoodyDataLib.dll</HintPath>
     </Reference>
