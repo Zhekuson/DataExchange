@@ -17,12 +17,12 @@ namespace ReturnUser
         public string Resources { get; set; }
 
         public List<int> Participants { get; set; }
-
+        public int AuthorAge { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public DateTime? EventDate { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         public string District { get; set; }
         public string Description { get; set; }

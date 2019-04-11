@@ -20,7 +20,8 @@ namespace ReturnUser
 
         public decimal? Latitude;
         public decimal? Longitude;
-
+        public int author_age;
+        public int Age;
         public DateTime created_at;
         public DateTime updated_at;
         public DateTime? date;//EvantDate 
@@ -48,7 +49,7 @@ namespace ReturnUser
             Longitude = lon;
             ID = id;
             district = name;
-
+            Age = author_age;
         }
     }
 }

@@ -37,10 +37,9 @@ namespace ReturnUser
             string name = req.GetQueryNameValuePairs()
             .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0)
             .Value;
-
-            Random random = new Random();
-            decimal latt=0;
-            decimal longi=0;
+            decimal latt = 0;
+            decimal longi = 0;
+        
 
 
             WebRequest request;
@@ -76,22 +75,22 @@ namespace ReturnUser
                 foreach (JSONEventParser parser in parserList)
                 {
 
-                    latt += ((decimal)Math.Pow(-1, random.Next(2))) * (decimal)random.NextDouble() * disp;
-                    longi += ((decimal)Math.Pow(-1, random.Next(2))) * (decimal)random.NextDouble() * disp;
+                    
                     eventsList.Add(new EventInfo
                     {
-                        Adress = parser.address,
-                        ID = parser.ID,
+                        Address = parser.address,
+                        ID = parser.id,
                         Longitude = longi,
                         Latitude = latt,
-                        CreatorID = parser.creator_id,
+                        CreatorID = parser.user_id,
                         CreatedAt = parser.created_at,
                         UpdatedAt = parser.updated_at,
                         EventDate = parser.EventDate,
                         Description = parser.description,
                         Resources = parser.resources,
                         State = parser.state,
-                        District = parser.district
+                        District = "",
+                        AuthorAge = parser.author_age
                     });
                 }
             }
@@ -106,22 +105,23 @@ namespace ReturnUser
                 foreach (JSONEventParser pars in parser.all)
                 {
 
-                    latt += ((decimal)Math.Pow(-1, random.Next(2))) * (decimal)random.NextDouble() * disp;
-                    longi += ((decimal)Math.Pow(-1, random.Next(2))) * (decimal)random.NextDouble() * disp;
+                   
                     eventsList.Add(new EventInfo
                     {
-                        Adress = parser.address,
-                        ID = parser.ID,
+                        Address = pars.address,
+                        ID = pars.id,
                         Longitude = longi,
                         Latitude = latt,
-                        CreatorID = parser.creator_id,
-                        CreatedAt = parser.created_at,
-                        UpdatedAt = parser.updated_at,
-                        EventDate = parser.EventDate,
-                        Description = parser.description,
-                        Resources = parser.resources,
-                        State = parser.state,
-                        District = parser.district
+                        CreatorID = pars.user_id,
+                        CreatedAt = pars.created_at,
+                        UpdatedAt = pars.updated_at,
+                        EventDate = pars.EventDate,
+                        Description = pars.description,
+                        Resources = pars.resources,
+                        State = pars.state,
+                        District = name,
+                        AuthorAge = pars.author_age
+                        
                     });
                 }
             }

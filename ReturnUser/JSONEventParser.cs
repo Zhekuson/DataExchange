@@ -31,7 +31,8 @@ namespace ReturnUser
         public string aasm_state;//state 
         public string resources;
         public string description;
-
+        public int author_age;
+        public int Age;
         public string name;
         public string district;
         public string state;
@@ -46,7 +47,7 @@ namespace ReturnUser
             Longitude = lon;
             ID = id;
             district = name;
-
+            Age = author_age;
         }
     }
 }
