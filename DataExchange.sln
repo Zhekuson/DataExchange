@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReturnEvent", "ReturnUser\ReturnEvent.csproj", "{1529EE6E-EF8D-4DF7-8637-765517FD5140}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReturnUser", "ReturnUser\ReturnUser.csproj", "{1529EE6E-EF8D-4DF7-8637-765517FD5140}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformLibrary", "TransformLibrary\TransformLibrary.csproj", "{B3FB8C43-D0D5-4E6E-9B62-9A2A495AD110}"
 EndProject
